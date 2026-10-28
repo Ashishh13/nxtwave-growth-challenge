@@ -35,3 +35,18 @@ The prototype will support campus ambassadors, registration attribution, referra
 - [x] Create a virtual environment.
 - [x] Configure `.gitignore`.
 - [x] Create the initial Git commit.
+
+### Milestone 2 — First Streamlit dashboard
+
+- [x] Install project dependencies.
+- [x] Create `src/app.py`.
+- [x] Display the registration target, proposed budget, and campaign duration.
+- [x] Add the initial campus ambassador and referral strategy.
+- [x] Run the application locally and verify that the dashboard renders.
+- [x] Clearly label campaign metrics as placeholders.
+- [ ] Connect persistent registration storage.
+- [ ] Add automated tests.
+
+**Validation:** The dashboard opened successfully in the local browser. No registrations have been collected; the target of 500 is a campaign goal, not an achieved result.
+
+**Current limitation:** Metrics are configuration values, not live database measurements.
