@@ -3,6 +3,7 @@ import os
 
 import streamlit as st
 
+
 import sys
 from pathlib import Path
 
@@ -376,3 +377,20 @@ st.caption(
     "NxtWave Growth Intern Challenge · Working prototype · "
     "The registration target is a goal, not an achieved result."
 )
+
+toolkit_path = Path(__file__).resolve().parent.parent / "docs" / "CAMPUS_AMBASSADOR_TOOLKIT.md"
+
+st.subheader("Campus Ambassador Toolkit")
+st.write("Ready-to-use outreach messages, referral guidance, and a daily tracking checklist.")
+
+if toolkit_path.exists():
+    toolkit_content = toolkit_path.read_text(encoding="utf-8")
+    st.download_button(
+        label="Download Campus Ambassador Toolkit",
+        data=toolkit_content,
+        file_name="NxtWave_Campus_Ambassador_Toolkit.md",
+        mime="text/markdown",
+        use_container_width=True,
+    )
+else:
+    st.info("The toolkit file is not available in this deployment.")
