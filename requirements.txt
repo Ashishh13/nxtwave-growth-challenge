@@ -1,5 +1,5 @@
 streamlit
 supabase
-pandas
 email-validator
 pytest
+python-dotenv
